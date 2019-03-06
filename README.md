@@ -34,8 +34,16 @@ cpu-28中需要用到：
 解压后用vivado打开目录下名为 cpu24的vicado project，每个人只需要修改 CPU_in_DDR4 -> mCPU_SingleCycleCPU 以及其下的ROM 和 Controller文件即可，其他任何文件都不需要修改。
 
 举例说明如何修改
+
 1）ROM：只需要修改测试代码文件所在路径：即 readmemh函数中的路径，指向你的测试代码文件
 （把基本内容一中的测试代码中第一行“v2.0 raw”去掉即可） 。注意路径中不能有中文名，并且由于字符的转义问题，路径中的 \ 应该改为\\
-2)
 
-举例说明对此代码如何进行修改：
+2) Cntroller:在module Controller（）那一行的bltz之后加上你的4条扩展指令新加入的控制信号。
+
+例如我新加入了 shamtsrc 信号和 ByteOrWord。相应的，
+
+在紧接着下面output reg那一行中 bltz后面加入你加入的新的控制信号。
+
+然后在下面的case（op） case（func）代码部分中对应的增加。（不知道怎么增加的请先看看已有代码）
+
+例如我有一条新指令 
