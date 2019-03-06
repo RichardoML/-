@@ -70,4 +70,6 @@ A.  cpu28_vivado.zip文件，此文件来自于 ACM1601朱博抡  小组成员�
 B.expand_vivado.hex文件的路径是需要添加到 ROM readmemh中的，该文件直接将 基本内容一中的测试文件expand.hex第一行“v2.0 raw” 去掉即可
 
 
+ps：我把自己的修改过后的文件也上传了，名字叫cpu24——modify，对比着看就知道我是怎么修改的。
+
 在你知道怎么修改之后，算上debug 的时间，最多半小时就可以解决单周期上板。
