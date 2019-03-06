@@ -46,4 +46,10 @@ cpu-28中需要用到：
 
 然后在下面的case（op） case（func）代码部分中对应的增加。（不知道怎么增加的请先看看已有代码）
 
-例如我有一条新指令 
+例如我有一条扩充指令  XORI op ：14 func：xx
+
+控制信号为  alu_op = 9 alu_src =1  regWrite = 1
+
+我就在对应的case op下加入 14: begin alu_op = 9; alu_src =1 ; regWrite = 1; end
+
+3) SingleCycleCPU
