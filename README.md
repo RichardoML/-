@@ -21,7 +21,7 @@ cpu-28中需要用到：
 基本内容二：单周期mips 24基本指令+4扩展指令 vivado上板
 
 使用方法和步骤：
-1）cpu28_vivado.zip文件，此文件来自于 ACM1601朱博抡  小组成员可以公用一个基础模板
+A.  cpu28_vivado.zip文件，此文件来自于 ACM1601朱博抡  小组成员可以公用一个基础模板
 
 每个人根据自己的扩展指令对代码稍微修改就可以了。
 
@@ -53,3 +53,9 @@ cpu-28中需要用到：
 我就在对应的case op下加入 14: begin alu_op = 9; alu_src =1 ; regWrite = 1; end
 
 3) SingleCycleCPU
+
+这些都修改完之后你的代码就修改忘了：直接 run implement  -> generate bitstream 开始上板子。
+
+B.expand_vivado.hex文件的路径是需要添加到 ROM readmemh中的，该文件直接将 基本内容一中的测试文件expand.hex第一行“v2.0 raw” 去掉即可
+
+
