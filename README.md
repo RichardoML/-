@@ -23,9 +23,17 @@ expand.hex文件时用来测试28条指令的代码，可以直接加载道logis
 使用方法和步骤：
 1）cpu28_vivado.zip文件，此文件来自于 ACM1601朱博抡  小组成员可以公用一个基础模板
 
-每个人根据自己的扩展指令队代码稍微修改就可以了。使用之前请一定先仔细阅读cpu28_vivado.zip内的readme文件。
+每个人根据自己的扩展指令对代码稍微修改就可以了。
 
-解压后用vivado打开目录下名为 cpu24的vicado project
+使用之前请一定先仔细阅读cpu28_vivado.zip内的readme文件。！！！！
+
+使用之前请一定先仔细阅读cpu28_vivado.zip内的readme文件。！！！！
+
+使用之前请一定先仔细阅读cpu28_vivado.zip内的readme文件。！！！！！
+
+解压后用vivado打开目录下名为 cpu24的vicado project，每个人只需要修改 CPU_in_DDR4 -> mCPU_SingleCycleCPU 以及其下的ROM 和 Controller文件即可，其他任何文件都不需要修改。
+
+举例说明如何修改
  
 
 举例说明对此代码如何进行修改：
