@@ -88,3 +88,5 @@ ps：我把自己的修改过后的文件也上传了，名字叫cpu24——modi
 注意：以上三个流水线都只包括24条基本指令，没有包含4条ccmb扩展指令。
 
 bypass_pipeline：重定向流水线，24条基本指令+4条扩展指令版
+
+cpu_dynamic_branch_predict 动态分支预测。
